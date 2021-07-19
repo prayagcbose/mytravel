@@ -1,0 +1,26 @@
+<app-customer-layout></app-customer-layout>
+<!--<div *ngFor="let booking of bookings">
+  <h1>{{booking.bookingId}}</h1>
+</div>-->
+<!-- bookingId: number,
+ userEmail: string,
+ hotelId:number
+-->
+<!--Bootstrap-->
+<table class="table mt-2">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Booking Id</th>
+      <th scope="col">Hotel Id</th>
+      <th scope="col">Eamil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{booking.bookingId}}</td>
+      <td>{{booking.hotelId}}</td>
+      <td>{{booking.userEmail}}</td>
+    </tr>
+  </tbody>
+</table>
+<!----------->

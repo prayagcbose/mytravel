@@ -1,0 +1,11 @@
+.bg{
+    height:100vh;
+    background-color: gray;
+    text-align:center;
+}
+
+.heading{
+    margin-top:200px;
+    font-size:7rem;
+    color:black;
+}

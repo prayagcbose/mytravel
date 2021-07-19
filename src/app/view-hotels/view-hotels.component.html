@@ -1,0 +1,36 @@
+<app-customer-layout></app-customer-layout>
+<!--<div *ngFor="let hotel of hotels">
+  <h1>{{hotel.hotelName}}</h1>
+  <button (click)="bookHotel(hotel)">Book Now</button>
+</div>-->
+<!--Bootstrap -------------------------------------->
+<!--hotelId:
+hotelName
+stars: nu
+city: str-->
+
+<table class="table mt-2">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Hotel Id</th>
+      <th scope="col">Hotel Name</th>
+      <th scope="col">Stars</th>
+      <th scope="col">City</th>
+      <th scope="col" *ngIf="email">Book Hotel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hotel of hotels">
+      <td>{{hotel.hotelId}}</td>
+      <td>{{hotel.hotelName}}</td>
+      <td>{{hotel.stars}}</td>
+      <td>{{hotel.city}}</td>
+      <td *ngIf="email">
+        <button class="btn btn-secondary" (click)="bookHotel(hotel)">Book Now</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-------------------------------------------------->
